@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="fill_parent" android:gravity="center"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/luck_number_description"
+        android:text="Numero da sorte da minha bichinha."
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/pink"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_marginBottom="25dp"/>
+
+    <LinearLayout
+        android:id="@+id/luck_number_wrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/luck_number_background"
+        android:layout_marginBottom="25dp">
+
+        <TextView
+            android:id="@+id/luck_number_text_view"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="40dp"
+            android:text="4"/>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/btn_generate_luck_number" android:background="@drawable/generate_luck_number_button" android:clickable="true" android:layout_width="100dp" android:layout_height="40dp" android:layout_gravity="center" android:gravity="center">
+        <TextView android:id="@+id/btn_generate_label" android:layout_centerHorizontal="true" android:gravity="center" android:text="Gerar" android:textSize="20dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textColor="@color/pink"/>
+    </RelativeLayout>
+</LinearLayout>
