@@ -1,9 +1,8 @@
 package com.example.yasser.myapplication;
 
+import android.app.Fragment;
+import android.app.FragmentTransaction;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -12,6 +11,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.example.yasser.myapplication.sections.ForestFragment;
+import com.example.yasser.myapplication.sections.HappyBirthdayFragment;
+import com.example.yasser.myapplication.sections.MusicFragment;
+import com.example.yasser.myapplication.sections.NumbersFragment;
+import com.example.yasser.myapplication.sections.PetsFragment;
+import com.example.yasser.myapplication.sections.PoetryFragment;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -59,7 +65,7 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_about) {
             return true;
         }
 
@@ -72,19 +78,30 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camara) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        FragmentTransaction transaction = getFragmentManager().beginTransaction();
 
-        } else if (id == R.id.nav_slideshow) {
+        Fragment fragment = new Fragment();
 
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
+        if (id == R.id.numbers) {
+            fragment = new NumbersFragment();
+        } else if (id == R.id.poetries) {
+            fragment = new PoetryFragment();
+        } else if (id == R.id.pets) {
+            fragment = new PetsFragment();
+        } else if (id == R.id.forest) {
+            fragment = new ForestFragment();
+        } else if (id == R.id.music) {
+            fragment = new MusicFragment();
+        } else if (id == R.id.happy_birthday) {
+            fragment = new HappyBirthdayFragment();
         }
+
+        transaction
+                .replace(R.id.main_content, fragment)
+                .addToBackStack(null);
+
+
+        transaction.commit();
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
