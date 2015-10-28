@@ -3,11 +3,12 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
+    <ListView
+        android:id="@+id/pets_list_view"
+        android:divider="@color/white"
+        android:dividerHeight="1dp"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:text="Pets!"
-        android:textSize="30dp"
-        android:gravity="center"/>
+        android:layout_height="fill_parent">
+    </ListView>
 
 </LinearLayout>
