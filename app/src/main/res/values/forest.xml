@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="forest_spots">
+        <item>The Outback | Descrição | Pispiricas adultas</item>
+        <item>Casa do lado | Descrição | Pispiricas adultas</item>
+        <item>CI | Descrição | Pispiricas adultas</item>
+        <item>Monte Alverne | Descrição | Pispiricas adultas</item>
+        <item>Costão do Santinho| Descrição | Pispiricas adultas</item>
+        <item>The Outback | Descrição | Pispiricas adultas</item>
+        <item>Guacamole| Descrição | Pispiricas adultas</item>
+        <item>Ocidente | Descrição | Pispiricas adultas</item>
+        <item>Caminhas | Descrição | Pispiricas adultas</item>
+    </string-array>
+</resources>
