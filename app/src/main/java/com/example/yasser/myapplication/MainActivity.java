@@ -12,6 +12,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.example.yasser.myapplication.sections.ForecastFragment;
 import com.example.yasser.myapplication.sections.ForestFragment;
 import com.example.yasser.myapplication.sections.HappyBirthdayFragment;
 import com.example.yasser.myapplication.sections.MusicFragment;
@@ -90,6 +91,8 @@ public class MainActivity extends AppCompatActivity
             fragment = new PetsFragment();
         } else if (id == R.id.forest) {
             fragment = new ForestFragment();
+        } else if (id == R.id.forecast) {
+            fragment = new ForecastFragment();
         } else if (id == R.id.music) {
             fragment = new MusicFragment();
         } else if (id == R.id.happy_birthday) {
