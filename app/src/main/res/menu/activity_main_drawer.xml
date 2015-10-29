@@ -17,6 +17,9 @@
         <item android:id="@+id/forecast"
             android:title="Previsão do tempo" />
 
+        <item android:id="@+id/video"
+            android:title="Um recadinho" />
+
         <item android:id="@+id/music"
             android:title="Musiquinha" />
 
