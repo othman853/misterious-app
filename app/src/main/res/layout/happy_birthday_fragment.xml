@@ -3,21 +3,21 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="60dp"
-        android:text="Parabéns Bichinha!"
-        android:textSize="30dp"
-        android:textColor="@color/pink"
-        android:textStyle="bold"
-        android:gravity="center"/>
-
-    <TextView        
-        android:id="@+id/happy_birthday_text"
+    <ScrollView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_margin="15dp"
-        android:text="@string/happy_birthday_text"
-        android:gravity=""/>
+        android:paddingTop="10dp">
 
+        <TextView
+            android:id="@+id/happy_birthday_text"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/happy_birthday_text"
+            android:textColor="@color/pink"
+            android:textSize="20dp"
+            android:lineSpacingExtra="5dp"
+            android:scrollHorizontally="false"/>
+    </ScrollView>
 </LinearLayout>
