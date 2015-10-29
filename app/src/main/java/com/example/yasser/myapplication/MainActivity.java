@@ -20,6 +20,7 @@ import com.example.yasser.myapplication.sections.NumbersFragment;
 import com.example.yasser.myapplication.sections.PetsFragment;
 import com.example.yasser.myapplication.sections.PoetryFragment;
 import com.example.yasser.myapplication.sections.SurpriseVideoFragment;
+import com.example.yasser.myapplication.util.Constants;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -83,27 +84,36 @@ public class MainActivity extends AppCompatActivity
         FragmentTransaction transaction = getFragmentManager().beginTransaction();
 
         Fragment fragment = new Fragment();
+        String tag = "";
 
         if (id == R.id.numbers) {
             fragment = new NumbersFragment();
+            tag = Constants.FragmentTags.NUMBERS;
         } else if (id == R.id.poetries) {
             fragment = new PoetryFragment();
+            tag = Constants.FragmentTags.POETRY;
         } else if (id == R.id.pets) {
             fragment = new PetsFragment();
+            tag = Constants.FragmentTags.PETS;
         } else if (id == R.id.forest) {
             fragment = new ForestFragment();
+            tag = Constants.FragmentTags.FOREST;
         } else if (id == R.id.forecast) {
             fragment = new ForecastFragment();
+            tag = Constants.FragmentTags.FORECAST;
         }else if (id == R.id.video) {
             fragment = new SurpriseVideoFragment();
+            tag = Constants.FragmentTags.VIDEO;
         } else if (id == R.id.music) {
             fragment = new MusicFragment();
+            tag = Constants.FragmentTags.MUSIC;
         } else if (id == R.id.happy_birthday) {
             fragment = new HappyBirthdayFragment();
+            tag = Constants.FragmentTags.HAPPY_BIRTHDAY;
         }
 
         transaction
-                .replace(R.id.main_content, fragment)
+                .replace(R.id.main_content, fragment, tag)
                 .addToBackStack(null);
 
 
