@@ -5,4 +5,6 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Sobre</string>
+    <string name="day_forecast">Sempre fará sol, desde que tu esteja do meu lado. :p</string>
+    <string name="night_forecast">E minhas noites sempre serão iluminadas pela minha estrelinha.</string>
 </resources>

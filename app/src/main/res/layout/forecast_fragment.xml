@@ -2,20 +2,34 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:weightSum="1">
 
     <ImageView
+        android:id="@+id/forecast_icon"
         android:layout_width="300dp"
         android:layout_height="300dp"
         android:layout_gravity="center"
         android:src="@drawable/sun"/>
 
     <TextView
+        android:id="@+id/forecast_text"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_height="73dp"
         android:gravity="center_horizontal"
         android:textSize="20dp"
         android:textColor="@color/pink"
-        android:text="Sempre fará sol, desde que tu esteja do meu lado. :p"/>
+        android:text="@string/day_forecast"
+        android:layout_weight="0.25" />
+
+    <ToggleButton
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:checked="true"
+        android:textOn="Noite"
+        android:textOff="Dia"
+        android:id="@+id/forecast_toggle"
+        android:layout_gravity="center_horizontal" />
 
 </LinearLayout>
