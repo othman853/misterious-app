@@ -19,6 +19,7 @@ import com.example.yasser.myapplication.sections.MusicFragment;
 import com.example.yasser.myapplication.sections.NumbersFragment;
 import com.example.yasser.myapplication.sections.PetsFragment;
 import com.example.yasser.myapplication.sections.PoetryFragment;
+import com.example.yasser.myapplication.sections.SurpriseVideoFragment;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -93,6 +94,8 @@ public class MainActivity extends AppCompatActivity
             fragment = new ForestFragment();
         } else if (id == R.id.forecast) {
             fragment = new ForecastFragment();
+        }else if (id == R.id.video) {
+            fragment = new SurpriseVideoFragment();
         } else if (id == R.id.music) {
             fragment = new MusicFragment();
         } else if (id == R.id.happy_birthday) {
