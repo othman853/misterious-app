@@ -16,10 +16,14 @@ import com.example.yasser.myapplication.adapters.PoetryListAdapter;
 import com.example.yasser.myapplication.sections.internals.PoetryInternalFragment;
 import com.example.yasser.myapplication.util.Constants;
 
+import java.io.Serializable;
+
 /**
  * Created by yasser on 10/27/15.
  */
 public class PoetryFragment extends Fragment implements AdapterView.OnItemClickListener{
+
+    private PoetryListAdapter adapter;
 
     @Nullable
     @Override
@@ -28,7 +32,9 @@ public class PoetryFragment extends Fragment implements AdapterView.OnItemClickL
 
         ListView poetryListView = (ListView) view.findViewById(R.id.poetry_list_view);
 
-        poetryListView.setAdapter(new PoetryListAdapter(getActivity()));
+        adapter = new PoetryListAdapter(getActivity());
+
+        poetryListView.setAdapter(adapter);
         poetryListView.setOnItemClickListener(this);
 
         return view;
@@ -40,8 +46,13 @@ public class PoetryFragment extends Fragment implements AdapterView.OnItemClickL
 
         FragmentTransaction transaction = getFragmentManager().beginTransaction();
 
+        Fragment internal = new PoetryInternalFragment();
+        Bundle bundle = new Bundle();
+        bundle.putSerializable("poetry", (Serializable) adapter.getItem(position));
+        internal.setArguments(bundle);
+
         transaction
-                .replace(R.id.main_content, new PoetryInternalFragment())
+                .replace(R.id.main_content, internal)
                 .addToBackStack(Constants.FragmentTags.POETRY)
                 .commit();
         Log.i("Sup", "Thats a click");

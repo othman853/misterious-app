@@ -1,9 +1,11 @@
 package com.example.yasser.myapplication.data;
 
+import java.io.Serializable;
+
 /**
  * Created by yasser on 10/28/15.
  */
-public class Poetry {
+public class Poetry implements Serializable{
 
     private String title;
     private String content;

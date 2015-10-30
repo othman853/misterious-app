@@ -1,5 +1,7 @@
 package com.example.yasser.myapplication.data;
 
+import android.util.Log;
+
 /**
  * Created by yasser on 10/28/15.
  */
@@ -61,6 +63,8 @@ public class Pet {
         naturalHabitat = data[2];
         eatingHabits = data[3];
         pictureId = data[4];
+
+        Log.wtf("Picture ID", pictureId);
         return this;
     }
 }

@@ -2,10 +2,12 @@ package com.example.yasser.myapplication.adapters;
 
 import android.app.Activity;
 import android.content.Context;
+import android.os.AsyncTask;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.ListAdapter;
 import android.widget.TextView;
 
@@ -24,6 +26,9 @@ public class PetsListAdapter extends BaseAdapter {
     private final Activity activity;
     private List<Pet> pets;
     private LayoutInflater inflater;
+    private TextView petName;
+    private ImageView petPicture;
+    private View view;
 
     public PetsListAdapter(Activity activity) {
         this.activity = activity;
@@ -62,12 +67,35 @@ public class PetsListAdapter extends BaseAdapter {
             convertView = inflater.inflate(R.layout.pets_list_item, null);
         }
 
+        view = convertView;
+
         Pet pet = pets.get(position);
 
-        TextView petName = (TextView) convertView.findViewById(R.id.pet_name);
+        int id = convertView.getResources().getIdentifier(pet.getPictureId(), "drawable", activity.getPackageName());
+
+        petName = (TextView) convertView.findViewById(R.id.pet_name);
+        petPicture = (ImageView) convertView.findViewById(R.id.pet_picture);
+
+        new LoadItemsAsync().execute(id);
 
         petName.setText(pet.getName());
 
         return convertView;
+    }
+
+    private class LoadItemsAsync extends AsyncTask<Integer , Integer, Integer> {
+
+
+        @Override
+        protected Integer doInBackground(Integer...id) {
+            return id[0];
+        }
+
+        @Override
+        protected void onPostExecute(Integer imageId) {
+            super.onPostExecute(imageId);
+
+            petPicture.setImageResource(imageId);
+        }
     }
 }
