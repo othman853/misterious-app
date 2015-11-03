@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="pets">
-        <item>Pispirica Filhote | A bichinha mais fofinha do mundo! Possui o canto mais fofo das florestas: "Sou Joseane pispirica safadinha!" | Passo Fundo | O hábito alimentar deste bichinho é curioso, pois ele se alimenta pouco, como um passarinho. Ainda assim, a Pispirica Filhote continua lindinha do seu jeito.|pispirica_filhote</item>
-        <item>Mel | Amor em forma de pêlo e fofura! | Passo Fundo | Ração e às vezes maçãs|mel</item>
-        <item>Mel | Amor em forma de pêlo e fofura! | Passo Fundo | Ração e às vezes maçãs|mel</item>
-        <item>Mel | Amor em forma de pêlo e fofura! | Passo Fundo | Ração e às vezes maçãs|mel</item>
-        <item>Mel | Amor em forma de pêlo e fofura! | Passo Fundo | Ração e às vezes maçãs|mel</item>
-        <item>Mel | Amor em forma de pêlo e fofura! | Passo Fundo | Ração e às vezes maçãs|mel</item>
-        <item>Mel | Amor em forma de pêlo e fofura! | Passo Fundo | Ração e às vezes maçãs|mel</item>
-        <item>Mel | Amor em forma de pêlo e fofura! | Passo Fundo | Ração e às vezes maçãs|mel</item>
+        <item>Pispirica Filhote|A bichinha mais fofinha do mundo! Possui o canto mais fofo das florestas: "Sou Joseane pispirica safadinha!" |Passo Fundo|O hábito alimentar deste bichinho é curioso, pois  ele come de tudo, porém come pouquinho e várias vezes ao dia.|pispirica_filhote</item>
+        <item>Mel|Amor em forma de pêlo e fofura! Adora brincar de bolinha e de "morder". Seus olhos transmitem amor da forma mais pura.|Monte Alverne (quarta caverna) e o meu coração.|Ração, maçãs e tudo mais que ela tiver a chance de comer... e.e|mel</item>
+        <item>Pispirica Adulta|A bichinha mais incrível do universo! É uma criaturinha extremamente inteligente, dócil e fofinha, sendo capaz de tornar qualquer detalhe corriqueiro da minha vida em algo especial e transformador. Seus gestinhos são capazes de derreter o meu coraçãozinho, me fazem querer agarrar e nunca mais soltar este bichinho maravilhoso.|Monte Alverne (quarta caverna) e o meu coração.|Outback, Guacamole, Petiskeira, Brigadeiro, Omelete, Sorvetes e ultimamente acrescenta os crepes à dieta.|pispirica_adulta</item>
+        <item>Sapinha|Amor verdinho. Bichinho fofinho, saltita entre os meus pensamentos o dia todo, todos os dias. |Monte Alverne (quarta caverna), meu coração e meus pensamentos.|Ocidente, pois é uma bichinha herbívora. :p|mel</item>
+        <item>Funguinhos|Bichinhos que se manifestam nas camas. Se alastram por seu habitat natural ao longo do dia, o aproveitando com toda calma do mundo e sentindo cada segundo passar como um presente.|Camas e sofás|Tele entregas. :p|mel</item>
+        <item>Ursinha|Uma variação da Pispirica. Possui orelhinhas de toquinha e faz um barulhinho quando precisa limpar a garganta, extremamente fofinha.|Monte Alverne (quarta caverna) e meu coração.|Alimentação semelhante à Pispirica adulta.|mel</item>
+        <item>Pinguins|Um casalzinho de bichinhos que dança ao som de geladeiras e ama sorvete! Quando o macho entrega à fêmea os calhaus que encontra, faz o convite a uma união que vai durar a eternidade, e começa, portanto, a busca por um ninho e a reprodução, para gerar novos pinguinzinhos. Os pinguinzinhos nunca devem se separar, e sempre protegem um ao outro. Até o último pôr do sol. |Os pinguins migram de vez em quando, pois ainda buscam um ninho permanente.|Outback, Guacamole, Petiskeira, Brigadeiro, Omelete, Sorvetes e ultimamente acrescentaram os crepes à dieta.|mel</item>
+        <item>Tigrinha| Amor em forma de pêlo e fofura!|Passo Fundo|Ração e às vezes maçãs|mel</item>
+        <item>Escorpião|Bichinho safado! Possui safadeza em sua natureza e é encantador e sexy. :3|Monte Alverne (quarta caverna) e o meu coração|Amor e luxúria. :p|escorpião</item>
+        <item>Massageador|Um animalzinho bastante inquieto, vive andando por aí...|Desconhecido (nômade)|Contraturas.|massageador</item>
     </string-array>
 </resources>
