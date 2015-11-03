@@ -6,11 +6,13 @@ import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.yasser.myapplication.R;
 import com.example.yasser.myapplication.data.Pet;
+import com.example.yasser.myapplication.util.Animations;
 
 import org.w3c.dom.Text;
 
@@ -39,6 +41,16 @@ public class PetsInternalFragment extends Fragment {
         petHabitat.setText(pet.getNaturalHabitat());
         petEatingHabits.setText(pet.getEatingHabits());
         petHabits.setText(pet.getDescription());
+
+        Animations.fadeIn(petImage);
+        Animations.fadeIn(petName);
+        Animations.fadeIn(petHabitat);
+        Animations.fadeIn(petEatingHabits);
+        Animations.fadeIn(petHabits);
+
+        Animations.fadeIn(view.findViewById(R.id.habitat_label));
+        Animations.fadeIn(view.findViewById(R.id.habits_label));
+        Animations.fadeIn(view.findViewById(R.id.eating_habits_label));
 
         return view;
     }

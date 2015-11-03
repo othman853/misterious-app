@@ -12,11 +12,11 @@
             android:id="@+id/happy_birthday_text"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
             android:text="@string/happy_birthday_text"
             android:textColor="@color/pink"
-            android:textSize="20dp"
+            android:textSize="17dp"
             android:lineSpacingExtra="5dp"
             android:scrollHorizontally="false"/>
     </ScrollView>

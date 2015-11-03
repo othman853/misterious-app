@@ -6,10 +6,12 @@ import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
 import android.widget.TextView;
 
 import com.example.yasser.myapplication.R;
 import com.example.yasser.myapplication.data.Poetry;
+import com.example.yasser.myapplication.util.Animations;
 
 /**
  * Created by yasser on 29/10/15.
@@ -25,6 +27,9 @@ public class PoetryInternalFragment extends Fragment {
 
         ((TextView) view.findViewById(R.id.poetry_title)).setText(poetry.getTitle());
         ((TextView) view.findViewById(R.id.poetry_content)).setText(poetry.getContent());
+
+        Animations.fadeIn(view.findViewById(R.id.poetry_title));
+        Animations.fadeIn(view.findViewById(R.id.poetry_content));
 
         return view;
     }
