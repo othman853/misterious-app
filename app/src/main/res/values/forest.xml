@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="forest_spots">
-        <item>The Outback | Descrição | Pispiricas adultas</item>
-        <item>Casa do lado | Descrição | Pispiricas adultas</item>
-        <item>CI | Descrição | Pispiricas adultas</item>
-        <item>Monte Alverne | Descrição | Pispiricas adultas</item>
-        <item>Costão do Santinho| Descrição | Pispiricas adultas</item>
-        <item>The Outback | Descrição | Pispiricas adultas</item>
-        <item>Guacamole| Descrição | Pispiricas adultas</item>
-        <item>Ocidente | Descrição | Pispiricas adultas</item>
-        <item>Caminhas | Descrição | Pispiricas adultas</item>
+        <item>The Outback|Um lugar para bichinhos muito carnívoros e famintos! Apesar da comida, o ponto forte deste lugar da floresta é os momentos incríveis que ele proporcionou ao pinguinzinho. Um lugar onde a comida é só um detalhe e o que realmente importa é o pinguinzinho estar junto da sua pinguinzinha. | Pispirica adulta, Pinguins, Tigrinha</item>
+        <item>Casa do lado|Lugar mágico, onde os pinguinzinhos se beijaram pela primeira vez. :3|Pinguinzinhos</item>
+        <item>Monte Alverne|O topo do mundo, lugar com a fauna mais diversificada da floresta, onde os bichinhos se reúnem.|Todos os bichinhos</item>
+        <item>Costão do Santinho|Um lugar incrível. É tocante e traz lembranças muito especiais de momentos e aventuras indescritíveis. Dancinhas e desenhinhos nas areias e muitos passeios e fotos guiaram as férias dos pinguinzinhos neste lugar mágico, onde eles puderam aproveitar completamente a sua união e esquecer os desafios da floresta cotidiana. Certamente um paraíso! | Pinguinzinhos</item>
+        <item>Iguatemi|Os bichinhos passam muito tempo por aqui, se divertindo, passeando e comendo. Esse lugar da floresta fica próximo do Monte Alverne, onde os bichinhos se reúnem. É onde os pinguinzinhos aproveitam para manter suas dietas e ficar juntinhos.| Pinguinzinhos e Mel.</item>
+        <item>Guacamole|Arriba! Os bichinhos gostam da culinária mexicana! Trazem lembranças das piñatinhas e momentos muito divertidos e únicos| Pinguinzinhos.</item>
+        <item>Ocidente|Lugar onde os bichinhos vão para manter sua dieta vegetariana e saudável. :p | Pispirica adulta e pinguinzinhos.</item>
+        <item>Caminhas|Onde os funguinhos podem passar um dia inteiro! Segundo eu, um funguinho, digo que é um lugar onde posso ficar parado o dia todo, mas mesmo assim, o dia continua sendo mágico!|Funguinhos.</item>
     </string-array>
 </resources>
