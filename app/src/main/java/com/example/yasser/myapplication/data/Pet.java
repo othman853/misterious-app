@@ -2,10 +2,12 @@ package com.example.yasser.myapplication.data;
 
 import android.util.Log;
 
+import java.io.Serializable;
+
 /**
  * Created by yasser on 10/28/15.
  */
-public class Pet {
+public class Pet implements Serializable{
     private String name;
     private String description;
     private String naturalHabitat;

@@ -4,28 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="160dp"
-        android:gravity="center"
-        android:orientation="vertical">
-
-        <ImageView
-            android:layout_margin="10dp"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_gravity="center"
-            android:src="@drawable/bichinha"/>
-
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="40dp"
-            android:text="Bichinha"
-            android:gravity="center"
-            android:textColor="@color/pink"
-            android:textSize="25dp"/>
-    </LinearLayout>
-
     <ScrollView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent">
@@ -34,6 +12,30 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/pet_image"
+                    android:layout_margin="10dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/bichinha"/>
+
+                <TextView
+                    android:id="@+id/pet_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:text="Bichinha"
+                    android:gravity="center"
+                    android:textColor="@color/pink"
+                    android:textSize="25dp"/>
+            </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/habitat_field_set"
@@ -46,15 +48,16 @@
                 <TextView
                     android:layout_width="120dp"
                     android:layout_height="40dp"
-                    android:gravity="center"
+                    android:gravity="right|center"
                     android:textColor="@color/pink"
                     android:textSize="15dp"
                     android:padding="5dp"
                     android:text="Habitat Natural:"
                     android:textStyle="bold"/>
                 <TextView
+                    android:id="@+id/pet_habitat"
                     android:layout_width="fill_parent"
-                    android:layout_height="40dp"
+                    android:layout_height="wrap_content"
                     android:textColor="@color/pink"
                     android:textSize="15dp"
                     android:padding="5dp"
@@ -73,13 +76,14 @@
                 <TextView
                     android:layout_width="120dp"
                     android:layout_height="40dp"
-                    android:gravity="center"
+                    android:gravity="right|center"
                     android:textColor="@color/pink"
                     android:textSize="15dp"
                     android:padding="5dp"
                     android:text="Alimentação:"
                     android:textStyle="bold"/>
                 <TextView
+                    android:id="@+id/pet_eating_habits"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:textColor="@color/pink"
@@ -94,46 +98,20 @@
                 android:id="@+id/living_habits_field_set"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
+                android:orientation="horizontal"
                 android:padding="7dp">
 
                 <TextView
                     android:layout_width="120dp"
                     android:layout_height="40dp"
-                    android:gravity="center"
+                    android:gravity="right|center"
                     android:textColor="@color/pink"
                     android:textSize="15dp"
                     android:padding="5dp"
                     android:text="Hábitos:"
                     android:textStyle="bold"/>
                 <TextView
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/pink"
-                    android:textSize="15dp"
-                    android:padding="5dp"
-                    android:text="Petiskeira, Guacamole, Outback asdasdasd asdasdasdasd"
-                    android:gravity="center_vertical"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/description_field_set"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="7dp">
-
-                <TextView
-                    android:layout_width="120dp"
-                    android:layout_height="40dp"
-                    android:gravity="center"
-                    android:textColor="@color/pink"
-                    android:textSize="15dp"
-                    android:padding="5dp"
-                    android:text="Descrição:"
-                    android:textStyle="bold"/>
-                <TextView
+                    android:id="@+id/pet_habits"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:textColor="@color/pink"

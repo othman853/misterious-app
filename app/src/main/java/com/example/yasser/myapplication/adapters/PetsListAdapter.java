@@ -59,11 +59,11 @@ public class PetsListAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        if(inflater == null){
+        if (inflater == null) {
             inflater = (LayoutInflater) activity.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         }
 
-        if(convertView == null){
+        if (convertView == null) {
             convertView = inflater.inflate(R.layout.pets_list_item, null);
         }
 
@@ -71,31 +71,9 @@ public class PetsListAdapter extends BaseAdapter {
 
         Pet pet = pets.get(position);
 
-        int id = convertView.getResources().getIdentifier(pet.getPictureId(), "drawable", activity.getPackageName());
-
         petName = (TextView) convertView.findViewById(R.id.pet_name);
-        petPicture = (ImageView) convertView.findViewById(R.id.pet_picture);
-
-        new LoadItemsAsync().execute(id);
-
         petName.setText(pet.getName());
 
         return convertView;
-    }
-
-    private class LoadItemsAsync extends AsyncTask<Integer , Integer, Integer> {
-
-
-        @Override
-        protected Integer doInBackground(Integer...id) {
-            return id[0];
-        }
-
-        @Override
-        protected void onPostExecute(Integer imageId) {
-            super.onPostExecute(imageId);
-
-            petPicture.setImageResource(imageId);
-        }
     }
 }
