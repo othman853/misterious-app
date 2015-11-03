@@ -19,6 +19,7 @@ import com.example.yasser.myapplication.sections.MusicFragment;
 import com.example.yasser.myapplication.sections.NumbersFragment;
 import com.example.yasser.myapplication.sections.PetsFragment;
 import com.example.yasser.myapplication.sections.PoetryFragment;
+import com.example.yasser.myapplication.sections.SplashFragment;
 import com.example.yasser.myapplication.sections.SurpriseVideoFragment;
 import com.example.yasser.myapplication.util.Constants;
 
@@ -41,6 +42,13 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        FragmentTransaction transaction = getFragmentManager().beginTransaction();
+        transaction
+                .replace(R.id.main_content, new SplashFragment())
+                .commit();
+
+        setTitle("");
     }
 
     @Override
